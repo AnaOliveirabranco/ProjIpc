@@ -1,8 +1,4 @@
-div titulo {
-    position:relative;
-    border-width: 1px;
-    width: 100%;
-    border: left 1px;
-    height: 20%;
-    background: rgb(32, 149, 216);
+body {
+        color:rgb(7, 75, 7);;
+        background-color:  rgb(168, 241, 168);
 }
