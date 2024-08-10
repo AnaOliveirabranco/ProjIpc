@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ana Oliveira">
-    <meta name="description" content="Igreja"/>
-    <meta name="Keywords" content=" ipc, Ipb, Palavra de Deus"/>
+    <meta name="description" content="Igreja">
+    <meta name="Keywords" content=" ipc, Ipb, Palavra de Deus">
     <title>IPC</title>
     
 </head>
 <body>
-    <div id="titulo">
-        <img src="C:\Users\choco\OneDrive\Área de Trabalho\HTML24\ProjIpc\ProjIpc\img\logo.jpg" height="70" width="70">
-        <strong> Igreja Presbiteriana</strong>
-        <a href="https://www.ipb.org.br/" title="Você sera direcionado para pagina de IPB!">
-        <img src="C:\Users\choco\OneDrive\Área de Trabalho\HTML24\ProjIpc\ProjIpc\img\ipb_logo.png" height="70" width="100"alt="Site da IPB"></a>
     
-    </div>
-    <h1>     Igreja Presbiteriana de Cosmos <input type="time" ></h1> 
+    <h1>     Igreja Presbiteriana de Cosmos </h1> 
     
 
-<form>
-        Nome:<input type="text" name="primeiro_nome"><br>
-        Sobrenome:<input type="text" name="sobrenome"><br>
-        Data de Nascimento:<input type="date" name="nascimento"><br>
+<form action="#" autocomplete="off" target="_blank">
+        <h3>Formulario para Novos Membros</h3>
+        Nome:<input type="text" name="p_nome" placeholder="Ana"><br>
+        Sobrenome:<input type="text" name="sobrenome" placeholder="Branco"><br>
+        Data de Nascimento:<input type="date" name="nascimento" placeholder="DD/MM/AA"><br>
         Sexo:<input type="radio" name="sexo" value="feminino">Feminino
              <input type="radio" name="sexo"  value="masculino">Mascullino<br>
-        Estado Civil<input type="radio" name="civil"  value="casado">Casado(a)
+        Estado Civil:<input type="radio" name="civil"  value="casado">Casado(a)
                     <input type="radio" name="civil"  value="solteiro">Solteiro(a)<br>
         Formação:
         <select id="formação" name="formação">
@@ -47,30 +42,39 @@
             </optgroup>
 
         </select><br>
-        Ocupação:<input type="text" name="Profissão"> <br>
-
+        Ocupação:<input type="text" name="Profissão" placeholder="Designer"><br>
+        
         Participante da classe:<br>
-            <input type="radio"  name="classe" value="inf5">Infantil até 5 anos<br>
-            <input type="radio"  name="classe" value="inf8">Infantil ate 8 anos<br>
-            <input type="radio"  name="classe" value="inf12">Infantil ate 12 anos<br>
-            <input type="radio"  name="classe" value="upa">UPA<br>
-            <input type="radio"  name="classe" value="jovens">Jovens<br>
-            <input type="radio"  name="classe" value="adultos">Adultos<br>
-            <input type="radio"  name="classe" value="catecuminos">Catecuminos<br>
-        Menbro comungante: <br>
-        <input type="radio" name="comunga" value="nao_comunga">Não comungante
+        <select id="classe" name="classe">
+            <optgroup label="Classe EBD">
+                <option label="Infantil até 5 anos" value="infantil_5"></option>
+                <option label="Infantil até 8 anos" value="infantil_8"></option>
+                <option label="Infantil até 12 anos" value="infantil_12"></option>
+                <option label="UPA" value="upa"></option>
+                <option label="Jovens" value="jovens"></option>
+                <option label="Adultos" value="adultos"></option>
+                <option label="Catecuminos" value="catecuminos"></option>
+            </optgroup>
+        </select><br>
+        
+        Menbro comungante:<input type="radio" name="comunga" value="nao_comunga">Não comungante
         <input type="radio" name="comunga" value="comungante">Comungante<br>
         Membro da sociedade:<br>
-        <input type="radio"  name="classe" value="inf5">UCP<br>
-        <input type="radio"  name="classe" value="inf8">UPA<br>
-        <input type="radio"  name="classe" value="inf12">UMP<br>
-        <input type="radio"  name="classe" value="upa">SAF<br>
-        <input type="radio"  name="classe" value="upa">ML<br>
-        Telefone: <input type="text" name="telefone"><br>          
-        e-mail:<input type="email" name="email"><br>
-        Senha:<input type="password"><br>
+        <select id="Sociedade" name="sociedade">
+            <optgroup label="Sociedades Internas">
+                <option label="UCP" value="ucp"></option>
+                <option label="UPA" value="upa"></option>
+                <option label="UMP" value="ump"></option>
+                <option label="SAF" value="saf"></option>
+                <option label="ML" value="ml"></option>
+            </optgroup>
+        </select><br>
+        Telefone: <input type="text" name="telefone" placeholder="(21)99999999"><br>          
+        E-mail:<input type="email" name="email" placeholder="ipc@gmail.com"><br>
+        Senha:<input type="password" placeholder="xxxxxx"><br>
         Aceito receber:<br>
-        <input type="checkbox" id="aceita" name="aceita">Aceita receber e-mail  <br>
+        <input type="checkbox" id="aceita_email" name="aceita"><b>Aceita receber e-mail informativos</b>  <br>
+        <input type="checkbox" id="aceita_zap" name="aceita"><b>WhatsApp</b>  <br>
 
         
         <br><br>
